@@ -2,6 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/UE-fab-doc/',
+  lang: 'zh-CN',
   title: "My Awesome Projects",
   description: "A UE Fab document Site",
   themeConfig: {

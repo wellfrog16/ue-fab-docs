@@ -1,8 +1,14 @@
 import { defineConfig } from 'vitepress'
 
+const getBase = () => {
+    const deploy = process?.env?.deploy
+    if (deploy === 'gh') { return '/UE-fab-docs/' } // github
+    return '/' // default, layer0
+}
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/UE-fab-doc/',
+  base: getBase(),
   lang: 'zh-CN',
   title: "My Awesome Projects",
   description: "A UE Fab document Site",

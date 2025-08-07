@@ -6,7 +6,7 @@ const resolve = dir => path.join(__dirname, dir)
 
 function getBase() {
     const deploy = process?.env?.deploy
-    if (deploy === 'gh') { return '/UE-fab-docs/' } // github
+    if (deploy === 'gh') { return '/ue-fab-docs/' } // github
     return '/' // default, layer0
 }
 

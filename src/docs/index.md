@@ -17,6 +17,5 @@ hero:
 features:
   - title: Dynamic Radial Wheel Inventory
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    link: /features/radial-wheel
+    link: /dynamic-radial-wheel-inventory
 ---
-

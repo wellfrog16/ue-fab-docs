@@ -16,7 +16,7 @@ hero:
 
 features:
   - title: 轮盘式仓库
-    details: 一个小型的仓库模块，包含射线检测、物品管理、动态轮盘菜单与存储等功能。
+    details: 一个小型的仓库模块，由射线检测、物品生成和管理、动态轮盘菜单、存储功能组成。
     link: /zh/radial-wheel-inventory/
 ---
 

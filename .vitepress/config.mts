@@ -21,8 +21,7 @@ export default defineConfig({
     srcDir: './src',
     rewrites: {
         'docs/:name.md': ':name.md',
-        'docs/:path/:name.md': ':path/:name.md',
-        'docs/:path1/:path2/:name.md': ':path1/:path2/:name.md',
+        'docs/:path*/:name.md': ':path*/:name.md',
     },
 
     locales: {

@@ -7,5 +7,5 @@ import { getLanguage } from '@/helper'
 const router = useRouter()
 const locale = getLanguage()
 
-router.go(`/${locale}/`)
+router.go(`./${locale}/`)
 </script>

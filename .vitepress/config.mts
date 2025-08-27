@@ -2,6 +2,9 @@ import path from 'node:path'
 import process from 'node:process'
 import { defineConfig } from 'vitepress'
 
+import enConfig from '../src/docs/en/config.mts'
+import zhConfig from '../src/docs/zh/config.mts'
+
 const resolve = dir => path.join(__dirname, dir)
 
 function getBase() {
@@ -13,38 +16,18 @@ function getBase() {
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     base: getBase(),
-    lang: 'en-US',
     title: 'My Awesome Projects',
     description: 'A UE Fab documents Site',
     srcDir: './src',
     rewrites: {
         'docs/:name.md': ':name.md',
         'docs/:path/:name.md': ':path/:name.md',
+        'docs/:path1/:path2/:name.md': ':path1/:path2/:name.md',
     },
-    themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-        nav: [
-            { text: 'Home', link: '/' },
-            {
-                text: 'Projtects',
-                items: [
-                    { text: 'Dynamic Radial Wheel Inventory', link: '/item-1' },
-                ],
-            },
-        ],
 
-        sidebar: {
-            '/dynamic-radial-wheel-inventory/': [
-                { text: 'Dynamic Radial Wheel Inventory', items: [
-                    { text: 'Introduction', link: '/dynamic-radial-wheel-inventory/' },
-                    { text: 'useage', link: '/dynamic-radial-wheel-inventory/' },
-                ] },
-            ],
-        },
-
-        socialLinks: [
-            { icon: 'epicgames', link: 'https://github.com/vuejs/vitepress' },
-        ],
+    locales: {
+        zh: { label: '简体中文', ...zhConfig },
+        en: { label: 'English', ...enConfig },
     },
     vite: {
         resolve: {

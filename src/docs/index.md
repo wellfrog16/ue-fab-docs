@@ -1,21 +1,11 @@
----
-# https://vitepress.dev/reference/default-theme-home-page
-layout: home
+# Home
 
-hero:
-  # name: "UMe"
-  text: "My awesome projects"
-  # tagline: My great project tagline
-  # actions:
-  #   - theme: brand
-  #     text: Markdown Examples
-  #     link: /markdown-examples
-  #   - theme: alt
-  #     text: API Examples
-  #     link: /api-examples
+<script setup>
+import { useRouter } from 'vitepress'
+import { getLanguage } from '@/helper'
 
-features:
-  - title: Dynamic Radial Wheel Inventory
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    link: /dynamic-radial-wheel-inventory
----
+const router = useRouter()
+const locale = getLanguage()
+
+router.go(`/${locale}/`)
+</script>

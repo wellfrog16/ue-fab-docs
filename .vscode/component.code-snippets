@@ -1,0 +1,16 @@
+{
+  "init Component": {
+    "scope": "vue",
+    "prefix": "zinit",
+    "body": [
+      "<template>",
+      "    <div>空页面</div>",
+      "</template>\n",
+      "<script setup lang=\"ts\">",
+      "",
+      "</script>\n",
+      "<style lang=\"scss\" module></style>\n"
+    ],
+    "description": "组件模板"
+  }
+}

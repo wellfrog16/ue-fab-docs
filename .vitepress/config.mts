@@ -16,7 +16,7 @@ function getBase() {
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     base: getBase(),
-    title: 'My Awesome Projects',
+    // title: 'My Awesome Projects',
     description: 'A UE Fab documents Site',
     srcDir: './src',
     rewrites: {

@@ -7,7 +7,7 @@ import { h, watch } from 'vue'
 import './style.css'
 
 function getPathInfo(path: string) {
-    const pattern = /^\/([^/]+)(?:\/([^/]*))?\/?$/
+    const pattern = /^\/([^/]+)(?:\/([^/]*))?\/?/
     const match = path.match(pattern)
 
     const lang = match?.[1]
@@ -44,7 +44,6 @@ export default {
                 }
             }
             else {
-                console.log(lang, name)
                 if (lang) {
                     siteData.value = { ...siteData.value, title: titleMapping[lang].home }
                 }

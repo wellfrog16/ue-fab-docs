@@ -9,7 +9,7 @@ const config: LocaleSpecificConfig<DefaultTheme.Config> = {
             {
                 text: '项目',
                 items: [
-                    { text: '轮盘式仓库', link: '/zh/radial-wheel-inventory/' },
+                    { text: '轮盘式仓库', link: '/zh/radial-wheel-inventory/intro' },
                 ],
             },
         ],
@@ -17,40 +17,37 @@ const config: LocaleSpecificConfig<DefaultTheme.Config> = {
         sidebar: {
             '/zh/radial-wheel-inventory/': [
                 {
-                    text: '轮盘式仓库',
-                    link: '/zh/radial-wheel-inventory1/',
+                    text: '介绍',
                     items: [
                         {
-                            text: '使用方法',
-                            link: '/zh/radial-wheel-inventory1/',
+                            text: '功能介绍',
+                            link: '/zh/radial-wheel-inventory/intro',
+                        },
+                    ],
+                },
+                {
+                    text: '使用方法',
+                    items: [
+                        {
+                            text: '第一步：射线检测',
+                            link: '/zh/radial-wheel-inventory/line-trace-check',
+                        },
+                        {
+                            text: '第二步：物品管理',
+                            link: '/radial-wheel-inventory/',
                             items: [
-                                {
-                                    text: '第一步：射线检测',
-                                    link: '/zh/radial-wheel-inventory1/',
-                                    items: [
-                                        { text: '安装方法', link: '/zh/radial-wheel-inventory1/' },
-                                        { text: '参数设置', link: '/zh/radial-wheel-inventory3/' },
-                                        { text: '监听事件', link: '/zh/radial-wheel-inventory2/' },
-                                    ],
-                                },
-                                {
-                                    text: '第二步：物品管理',
-                                    link: '/radial-wheel-inventory/',
-                                    items: [
-                                        { text: '安装方法', link: '/zh/radial-wheel-inventory1/' },
-                                        { text: '参数设置', link: '/zh/radial-wheel-inventory3/' },
-                                        { text: '监听事件', link: '/zh/radial-wheel-inventory2/' },
-                                    ],
-                                },
-                                {
-                                    text: '第三步：轮盘仓库',
-                                    link: '/radial-wheel-inventory/',
-                                    items: [
-                                        { text: '安装方法', link: '/zh/radial-wheel-inventory1/' },
-                                        { text: '参数设置', link: '/zh/radial-wheel-inventory3/' },
-                                        { text: '监听事件', link: '/zh/radial-wheel-inventory2/' },
-                                    ],
-                                },
+                                { text: '安装方法', link: '/zh/radial-wheel-inventory1/' },
+                                { text: '参数设置', link: '/zh/radial-wheel-inventory3/' },
+                                { text: '监听事件', link: '/zh/radial-wheel-inventory2/' },
+                            ],
+                        },
+                        {
+                            text: '第三步：轮盘仓库',
+                            link: '/radial-wheel-inventory/',
+                            items: [
+                                { text: '安装方法', link: '/zh/radial-wheel-inventory1/' },
+                                { text: '参数设置', link: '/zh/radial-wheel-inventory3/' },
+                                { text: '监听事件', link: '/zh/radial-wheel-inventory2/' },
                             ],
                         },
 

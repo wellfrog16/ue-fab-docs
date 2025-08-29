@@ -19,6 +19,7 @@ export default defineConfig({
     // title: 'My Awesome Projects',
     description: 'A UE Fab documents Site',
     srcDir: './src',
+    cleanUrls: true,
     rewrites: {
         'docs/:name.md': ':name.md',
         'docs/:path*/:name.md': ':path*/:name.md',

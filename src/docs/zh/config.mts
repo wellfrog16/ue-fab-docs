@@ -1,5 +1,12 @@
 import type { DefaultTheme, LocaleSpecificConfig } from 'vitepress'
 
+function createLink(text: string, link: string) {
+    return {
+        text,
+        link: `/zh/radial-wheel-inventory/${link}`,
+    }
+}
+
 const config: LocaleSpecificConfig<DefaultTheme.Config> = {
     lang: 'zh-CN',
     themeConfig: {
@@ -9,48 +16,23 @@ const config: LocaleSpecificConfig<DefaultTheme.Config> = {
             {
                 text: '项目',
                 items: [
-                    { text: '轮盘式仓库', link: '/zh/radial-wheel-inventory/intro' },
+                    createLink('轮盘式仓库', ''),
                 ],
             },
         ],
 
         sidebar: {
-            '/zh/radial-wheel-inventory/': [
+            '/zh/radial-wheel-inventory': [
                 {
                     text: '介绍',
-                    items: [
-                        {
-                            text: '功能介绍',
-                            link: '/zh/radial-wheel-inventory/intro',
-                        },
-                    ],
+                    items: [createLink('功能介绍', '')],
                 },
                 {
                     text: '使用方法',
                     items: [
-                        {
-                            text: '第一步：射线检测',
-                            link: '/zh/radial-wheel-inventory/line-trace-check',
-                        },
-                        {
-                            text: '第二步：物品管理',
-                            link: '/radial-wheel-inventory/',
-                            items: [
-                                { text: '安装方法', link: '/zh/radial-wheel-inventory1/' },
-                                { text: '参数设置', link: '/zh/radial-wheel-inventory3/' },
-                                { text: '监听事件', link: '/zh/radial-wheel-inventory2/' },
-                            ],
-                        },
-                        {
-                            text: '第三步：轮盘仓库',
-                            link: '/radial-wheel-inventory/',
-                            items: [
-                                { text: '安装方法', link: '/zh/radial-wheel-inventory1/' },
-                                { text: '参数设置', link: '/zh/radial-wheel-inventory3/' },
-                                { text: '监听事件', link: '/zh/radial-wheel-inventory2/' },
-                            ],
-                        },
-
+                        createLink('第一步：射线检测', 'line-trace-check'),
+                        createLink('第二步：物品系统', 'item-system'),
+                        createLink('第三步：轮盘仓库', 'inventory'),
                     ],
                 },
             ],
@@ -62,7 +44,7 @@ const config: LocaleSpecificConfig<DefaultTheme.Config> = {
                 icon: {
                     svg: '<img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/6da454a8eef5c53927249f8ad16eb5d7-v1.svg" />',
                 },
-                link: 'https://github.com/vuejs/vitepress',
+                link: 'https://www.fab.com/zh-cn/sellers/inkwash',
             },
         ],
 

@@ -1,18 +1,21 @@
-# 放功能，介绍，视频链接
+---
+outline: deep
+---
 
-1.  aa
-2.  aa a
+# 功能介绍
 
-<Text />
+## 概述
 
-<script setup>
-import { onMounted } from "vue";
-import Text from "@/components/index.vue";
+轮盘式仓库一个基于蓝图的物品管理组件，它由射线检测物品、物品管理与生成、轮盘式菜单组成。它们还可以分开使用，以实现更灵活的功能。
 
-onMounted(() => {
-    const selector = document.querySelector("header .title a span");
-    console.log(selector);
-    // selector.innerHTML = "Radial Wheel Inventory";
+## 特性
 
-})
-</script>
+- **全蓝图式设计**：更方便的蓝图配置，无需 C++ 基础
+- **射线检测物品**：更精确的获取看到的 Actor
+- **物品管理与生成**：通过 DataTable 管理物品、通过蓝图生成物品，提供丰富的控制参数
+- **轮盘式菜单**：动态的菜单内容，可升级的菜单容量，支持自定义菜单样式
+
+## 使用
+
+1. 查看项目文件夹中的 Demo，了解组件的使用方法
+2. 开始从零开始配置功能，查看 [使用方法](/zh/radial-wheel-inventory/config)
